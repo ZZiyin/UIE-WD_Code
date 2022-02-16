@@ -1,4 +1,4 @@
-# UIE-WD Code (ICASSP 2022)
+# UIE-WD (ICASSP 2022)
 This is the PyTorch implementation for "A Wavelet-based Dual-stream Network for Underwater Image Enhancement", ICASSP, 2022. We present a wavelet-based dual-stream network that addresses color cast and blurry details in underwater images.
 More results can be found in our website.
 [paper]() | [website](https://zziyin.github.io/UIE-WD.html)
@@ -32,7 +32,7 @@ The synthesized training dataset is generated from [NYU Depth V2](https://cs.nyu
 
 Use the following code to generate training dataset.
     
-<code>python dataset_nyu.py nyu_rgbd_path datapath </code>
+    python dataset_nyu.py nyu_rgbd_path datapath
 
 **Arguments:**
 - `nyu_rgbd_path`: The path of NYU Depth V2 dataset (.mat)
@@ -41,7 +41,7 @@ Use the following code to generate training dataset.
 ## Testing
 Pretrained models can be found in the <code>./checkpoints</code>. Use the following code to generate results. And the enhanced images can be found in <code>./results</code>.
 
-<code>python test_multi.py multi --test_dataset UIEB --data_path ../UIEB/raw-890 --model_load_path checkpoints/multi/model.pth </code>
+    python test_multi.py multi --test_dataset UIEB --data_path ../UIEB/raw-890 --model_load_path checkpoints/multi/model.pth
 
 **Arguments:**
 -  `test_dataset`: The name of dataset you would like to use for testing.
