@@ -1,11 +1,22 @@
 # UIE-WD Code (ICASSP 2022)
-This is the code and datasets for "A Wavelet-based Dual-stream Network for Underwater Image Enhancement", ICASSP, 2022.  
+This is the PyTorch implementation for "A Wavelet-based Dual-stream Network for Underwater Image Enhancement", ICASSP, 2022. We present a wavelet-based dual-stream network that addresses color cast and blurry details in underwater images.
+More results can be found in our website.
 [paper]() | [website](https://zziyin.github.io/UIE-WD.html)
 
-![examples](./Images/examples.png)
+<div align="center"><img src="./Images/examples.png" width="80%"></div>
 
 
 ## Requirement
+**Dependency**
+- Python 3.7
+- PyTorch 0.4.1
+- numpy
+- skimage
+- matplotlib
+- tqdm
+- cv2
+- Pillow
+
 1. Clone repository
 
     <code>git clone https://github.com/ZZiyin/UIE-WD_Code.git</code>
@@ -15,9 +26,9 @@ This is the code and datasets for "A Wavelet-based Dual-stream Network for Under
     <code>pip install -r requirements.txt</code>
 
 ## Dataset 
-The synthesized training dataset is generated from [NYU Depth V2](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) following [Anwar et al. (2018)](https://arxiv.org/abs/1807.03528), which consists of 1449 images. The dataset is augmented by generating 6 images of each class using random parameters, thus for each ground truth image, we have corresponding 36 images of different water types. 
+The synthesized training dataset is generated from [NYU Depth V2](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) following [Anwar et al. (2018)](https://arxiv.org/abs/1807.03528), which consists of 1449 images. The dataset is augmented by generating 6 images of each class using random parameters, thus for each ground truth image, we have corresponding 36 images of different water types. The following are the examples of generated images.
 
-![dataset](./Images/dataset.png)
+<img src="./Images/dataset.png">
 
 Use the following code to generate training dataset.
     
@@ -25,7 +36,7 @@ Use the following code to generate training dataset.
 
 **Arguments:**
 - `nyu_rgbd_path`: The path of NYU Depth V2 dataset (.mat)
-- `datapath`:  The path of file where you would like to store the genereated synthesized training images.
+- `datapath`:  The path of folder where you would like to store the genereated synthesized training images.
 
 ## Testing
 Pretrained models can be found in the <code>./checkpoints</code>. Use the following code to generate results. And the enhanced images can be found in <code>./results</code>.
