@@ -44,9 +44,22 @@ Pretrained models can be found in the <code>./checkpoints</code>. Use the follow
     python test_multi.py multi --test_dataset UIEB --data_path ../UIEB/raw-890 --model_load_path checkpoints/multi/model.pth
 
 **Arguments:**
--  `test_dataset`: The name of dataset you would like to use for testing.
--  `data_path`: The path of dataset you would like to use for testing.
--  `model_load_path`: The path of pretrained model.
+-  `--test_dataset`: The name of dataset you would like to use for testing.
+-  `--data_path`: The path of dataset you would like to use for testing.
+-  `--model_load_path`: The path of pretrained model.
+-  '--test_size (optional)' : The size of test dataset, default = 890.
+
+## Training
+Use the following code to train the model.
+
+    python train_multi.py multi --data_path ../image/data --label_path ../image/label 
+    
+**Arguments:**
+-  `--data_path`: The path of training input data.
+-  `--label_path`: The path of training label data.
+-  `--batch_size (optional)`: Batch_size of training model. default = 4.
+-  `--save_interval (optional)`: Save models after this many epochs, default = 2.
+
 
 ## Environment
 We conduct training and testing on Intel Core i5-7200 CPU and NVIDIA Geforce RTX 2070 GPU. Noted that the provided model is retrianed on Tesla T4 as the previous server is not accessible at the moment, we will update the pretrained model soon.
