@@ -73,7 +73,7 @@ def test(model,  dataloader, model_name, which_epoch):
 @click.option('--data_path', default=None, help='Path of testing input data')
 @click.option('--label_path', default=None, help='Path of testing label data')
 @click.option('--which_epoch', default=None, help='Test for this epoch')
-@click.option('--test_size', default=3000, help='Lambda for N loss')
+@click.option('--test_size', default=890, help='The size of test dataset')
 @click.option('--model_load_path', default=None, help='Load path for pretrained fN')
 def main(name, num_channels, test_dataset, data_path, label_path, which_epoch, test_size, model_load_path):
 
@@ -103,7 +103,7 @@ def main(name, num_channels, test_dataset, data_path, label_path, which_epoch, t
         # Add more datasets
         test_dataset = UIEBDataset(data_path,
             label_path,
-            size=890,
+            size=test_size,
             test_start=0,
             mode='test')
 
