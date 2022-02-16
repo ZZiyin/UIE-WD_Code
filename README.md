@@ -47,10 +47,10 @@ Pretrained models can be found in the <code>./checkpoints</code>. Use the follow
 -  `--test_dataset`: The name of dataset you would like to use for testing.
 -  `--data_path`: The path of dataset you would like to use for testing.
 -  `--model_load_path`: The path of pretrained model.
--  '--test_size (optional)' : The size of test dataset, default = 890.
+-  `--test_size (optional)` : The size of test dataset, default = 890.
 
 ## Training
-Use the following code to train the model.
+Use the following code to train the model. The weights will be saved every 2 epoch, which can be found in <code>./checkpoints</code>.
 
     python train_multi.py multi --data_path ../image/data --label_path ../image/label 
     
