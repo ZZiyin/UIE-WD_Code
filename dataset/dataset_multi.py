@@ -192,6 +192,7 @@ class UIEBDataset(Dataset):
             self.uw_images = self.uw_images[self.val_start:self.val_start+self.size]
 
         self.transform = transforms.Compose([
+            transforms.Resize((480, 640)),
             transforms.ToTensor()
             ])
 
