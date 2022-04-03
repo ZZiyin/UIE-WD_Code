@@ -1,7 +1,7 @@
 # UIE-WD (ICASSP 2022)
 This is the PyTorch implementation for "A Wavelet-based Dual-stream Network for Underwater Image Enhancement", ICASSP, 2022. We present a wavelet-based dual-stream network that addresses color cast and blurry details in underwater images.
 More results can be found in our webpage.
-[paper]() | [webpage](https://zziyin.github.io/UIE-WD.html)
+[paper](https://arxiv.org/abs/2202.08758) | [webpage](https://zziyin.github.io/UIE-WD.html)
 
 <div align="center"><img src="./Images/examples.png" width="80%"></div>
 
