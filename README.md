@@ -39,7 +39,7 @@ Use the following code to generate training dataset.
 - `datapath`:  The path of folder where you would like to store the genereated synthesized training images.
 
 ## Testing
-Pretrained models can be found in the [google drive](https://drive.google.com/file/d/1y7qMEMHK556_qvkxw_ARTm93YVHX4Hn0/view?usp=sharing), place the pretrained model in <code>./checkpoints</code> folder. Use the following code to generate results. And the enhanced images can be found in <code>./results</code>.
+Pretrained models can be found in the [google drive](https://drive.google.com/file/d/19L3t57LOrQfYt6ESkTpnx1zoFau9G-OB/view?usp=sharing), place the pretrained model in <code>./checkpoints</code> folder. Use the following code to generate results. And the enhanced images can be found in <code>./results</code>.
 
     python test_multi.py multi --test_dataset UIEB --data_path ../UIEB/raw-890 --model_load_path checkpoints/multi/model.pth
 
