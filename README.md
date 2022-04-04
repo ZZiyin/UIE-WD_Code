@@ -49,6 +49,12 @@ Pretrained models can be found in the [google drive](https://drive.google.com/fi
 -  `--model_load_path`: The path of pretrained model.
 -  `--test_size (optional)` : The size of test dataset, default = 890.
 
+**Update**:
+
+2022.4.4
+
+The pretrained model has been updated.
+
 ## Training
 Use the following code to train the model. The weights will be saved every 2 epoch, which can be found in <code>./checkpoints</code>.
 
@@ -63,5 +69,6 @@ Use the following code to train the model. The weights will be saved every 2 epo
 
 ## Environment
 We conduct training and testing on Intel Core i5-7200 CPU and NVIDIA Geforce RTX 2070 GPU. Noted that the provided model is retrianed on Tesla T4 as the previous server is not accessible at the moment, we will update the pretrained model soon.
+
 
 ## Citation
